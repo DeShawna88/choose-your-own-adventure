@@ -6,8 +6,7 @@ const destination = prompt('Forest or Beach?');
 console.log(`Your destination is ${destination}`);
 if(destination === 'Beach') {
     console.log('Bring cash')
-}
-const cash = prompt('How much cash?');
+    const cash = prompt('How much cash?');
 if(cash >= 50) {
     console.log(`Buy food`)
 const buyFood = prompt(`Pizza or Hamburger?`);
@@ -19,6 +18,21 @@ const buyFood = prompt(`Pizza or Hamburger?`);
 } else {
     console.log(`Need more cash`)
     
-} if(destination === 'Forest') {
-    console.log('Bring sleeping bag')
+} 
 }
+
+else if(destination === 'Forest') {
+    console.log('Bring sleeping bag')
+    const temp = prompt('What is the temperature?');
+if(temp < 60) {
+    console.log('Build fire')
+}
+const buildFire = prompt('Can u build a fire? [Y/N]');
+    if(buildFire === 'Y') {
+        console.log('Continue. Have a good night!')
+        }else if(buildFire === 'N') {
+            console.log('Head home now!')
+        }
+}
+
+    
