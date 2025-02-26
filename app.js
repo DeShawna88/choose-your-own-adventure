@@ -26,13 +26,15 @@ else if(destination === 'Forest') {
     const temp = prompt('What is the temperature?');
 if(temp < 60) {
     console.log('Build fire')
-}
-const buildFire = prompt('Can u build a fire? [Y/N]');
+    const buildFire = prompt('Can u build a fire? [Y/N]');
     if(buildFire === 'Y') {
         console.log('Continue. Have a good night!')
         }else if(buildFire === 'N') {
             console.log('Head home now!')
-        }
+}
+    }else if(temp > 60) {
+    console.log('Find a lake to cool off')
+    }
 }
 
     
